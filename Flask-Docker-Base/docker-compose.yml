@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  gcp_docker:
+    build: .
+# ローカルやサーバ側が80番、docker側が8080番
+    ports:
+      - 80:8080
